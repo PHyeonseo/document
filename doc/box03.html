@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델 03 - 요소를 겹쳐서 사용하기</title>
+  <style>
+    * {margin: 0;padding: 0;box-sizing: border-box;}
+    section {
+      background-color: #ddd;
+      text-align: center;
+    }
+    ul {
+      margin: 0 auto;
+      list-style: none;
+      width: 500px;
+      background-color: #f00;
+    }
+    li {
+      background-color: #ff0;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ul unorder list 순서 번호가 붙지 않은 list / list는 list item만 자식으로 가진다. -->
+  <section>
+    <ul>
+      <li>BOX01</li>
+      <li>BOX02</li>
+      <li>BOX03</li>
+      <li>BOX04</li>
+    </ul>
+  </section>
+</body>
+</html>

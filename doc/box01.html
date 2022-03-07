@@ -1,1 +1,68 @@
-박현서
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델 01 - 요소에 대한 기본 성질을 설명</title>
+  <style>
+    /* tag seletor */
+    body {margin: 0;}
+    div {
+      width: 300px;
+      background-color: red;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #333;
+    }
+    .border-box {
+      width: 300px;
+      background-color: #ff0;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #333;
+    }
+    span {
+      width: 300px;
+      background-color: red;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #333;
+      height: 100px;
+    }
+    .display-block {
+      display: block;
+      box-sizing: border-box;
+      background-color: #ff0;
+    }
+  </style>
+</head>
+<body>
+  <!-- 글자 그림(html의 내용에 관련된 'Tag' 뺀 거의 모든 태그는 박스이다. display:block; 속성을가짐) -->
+  <!-- 
+    1. BOX는 투명하다
+    2. BOX는 width:auto;로 꽉 채운다.
+    3. BOX는 사교적이지 않다. 앞에 다른요소가 오지 못한다.
+  -->
+  <div>
+    BOX!
+  </div>
+  <div class="border-box">
+    BOX!
+  </div>
+  
+
+  <!-- 
+  1. inline 요소는 width값을 가지지 못한다.
+  2. inline 요소는 아래위 margin, padding 값을 가지지 못한다.
+ -->
+  <span>
+    INLINE
+  </span>
+  <span class="display-block">
+    INLINE
+  </span>
+
+
+</body>
+</html>
