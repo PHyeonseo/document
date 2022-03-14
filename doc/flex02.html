@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스02</title>
+    <style>
+
+        * {margin:0;padding:0;box-sizing:border-box;}
+
+        .itm {width:200px;}
+        .itm:nth-child(1) {background:#f00;}
+        .itm:nth-child(2) {background:#ff0;}
+        .itm:nth-child(3) {background:#00f;}
+
+        .container {width:1200px;margin:100px auto;background:#ddd;}
+
+        .flex01 {
+            display:flex;
+        }
+
+        .flex02 {
+            display:flex;
+            justify-content: flex-end;
+        }
+
+        .flex03 {
+            display:flex;
+            justify-content: center;
+        }
+
+        .flex04 {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .flex05 {
+            display:flex;
+        }
+
+        .flex05 .itm:nth-child(3) {
+            margin-left:auto;
+        }
+
+        .flex06 {
+            display:flex;
+        }
+
+        .flex06 .itm:nth-child(2) {
+            flex:1;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    
+    <div class="container flex01">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+
+
+    <div class="container flex02">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+
+
+    <div class="container flex03">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+
+
+    <div class="container flex04">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+
+    <div class="container flex05">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+
+    <div class="container flex06">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+
+
+</body>
+</html>

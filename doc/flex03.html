@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플렉스 02</title>
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@100;300;400;500;700;900&display=swap');
+
+    * {margin: 0; padding: 0;box-sizing: border-box;font-size: inherit;font-weight: normal;}
+    ul {list-style: none;}
+    a  {color: inherit;text-decoration: none;}
+    body {
+      font-family: 'Noto Sans Korean', sans-serif; 
+      background: #444;
+      line-height: 1;
+    }
+
+    .headerWrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .topBanner {
+      background: #333;
+      color: #fff;
+      font-size: 15px;
+      padding: 5px 15px;
+    }
+    .topBanner .inner {
+      display: flex;
+      justify-content: space-between;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .topBanner ul {
+      display: flex;
+    }
+    .topBanner .left li {
+      margin-right: 30px;
+    }
+    .topBanner .right {
+      gap: 30px;
+    }
+    .topBanner .right li {
+      position: relative;
+    }
+    .topBanner .right li~li::before {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 12px;
+      background: #ddd;
+      position: absolute;
+      top: 50%;   
+      left: -15px;
+      transform: translateY(-50%);
+    }
+    .headerWrap h1 {
+      padding: 20px 0;
+      text-align: center;
+    }
+    .gnb {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .gnb ul {
+      display: flex;
+      justify-content: center;
+      width: 1200px;
+      margin: 0 auto;
+      gap: 40px;        
+      color: #fff;
+      line-height: 50px;
+    }
+
+    .mainVisual {
+      position: relative;
+      height: 100vh;
+      background: url(../img/main.png) no-repeat center center/cover; /*반복X x축 중간 y축 중간  꽉채움*/
+    }
+    .mainVisual .slogan {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%,-50%);
+      width: 1200px;
+      padding: 0 15px;
+      color: #fff;
+    }
+    .mainVisual .slogan h2 {
+      font-size: 17px;
+      font-weight: 100;
+    }
+  </style>
+</head>
+<body>
+  <div class="Wrap">
+    <!-- HEADER -->
+    <header class="headerWrap">
+      <div class="topBanner">
+        <div class="inner">
+          <ul class="left">
+            <li><a href="#"><i class="xi-chip-o"></i>KOR</a></li>
+            <li><a href="#">STORE</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#!">SWAROVSKI CLUB</a></li>
+            <li><a href="#!">SCS</a>S</li>
+            <li><a href="#!">LOGIN</a>S</li>
+          </ul>  
+        </div>
+      </div>
+      <h1>
+        <img src="../img/logo.png" alt="">
+      </h1>
+      <nav class="gnb">
+        <ul>
+          <li><a href="#">NEW IN </a></li>
+          <li><a href="#">JEWELRY</a></li>
+          <li><a href="#">WATCHES</a></li>
+          <li><a href="#"> ACCESSORIES</a></li>
+          <li><a href="#">DECORATIONS</a></li>
+          <li><a href="#">GIFTS </a></li>
+          <li><a href="#">COLLECTIONS</a></li>
+          <li><a href="#">STYLE EDIT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION --> 
+    <main>
+      <section class="mainVisual">
+        <div class="slogan">
+          <h2>SWAROVSKI CELEBRATES 125 YEARS</h2>
+          <p>스와로브스키는 정밀하게 재단된 크리스탈과
+            창의력과 혁신을 위한 끝없는 추진력으로 더욱 빛나는 세상을 만듭니다.
+            스와로브스키가 주얼리,패션,엔터테인먼트 및 디자인 전반에서 빛을 기쁨으로 바꾸는 방법과
+            긍정적인 영향에 대한 헌신이 우리 방식을 어떻게 비추는지 알아보세요.</p>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footerWrap"></footer>
+  </div>
+</body>
+</html>

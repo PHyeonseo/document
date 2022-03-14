@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포지션 01 - 기초편</title>
+  <style>
+    /* 
+    position : static; 포지션이 아니게한다. 
+    position : abosolute; 좌표를 가진다 top, left, right, bottom
+    (뜬다.쪼그라든다 body가 기준이 된다)
+    position : relative; 기준이 된다. 좌표를 가진다. 뜨오르지 않고 공간을 차지한다. 쪼그라들지 않는다.
+    position : fixed; 화면을 기준으로 떠오른다. 좌표를가진다. 다른 기준 따위는 없다.
+    position : sticky; 박스처럼 있다가 마우스를 내리면 fixed가 된다.
+    */
+    body {
+      background-color: #ff0;
+    }
+    .headerWap {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+    }
+
+
+
+    .Wrap {
+      position: relative;
+      margin: 200px;
+      width: 400px;
+      height: 300px;
+      background-color: #444;
+    }
+    .abosolute { 
+      position: absolute;
+      background-color: red;
+      top: 100px;
+      left: 50px;
+    }
+    .fixed {
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      background-color: #336;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="headerWap">
+    sticky..
+  </header>
+
+  <div class="Wrap">
+    <section class="container">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nam perferendis voluptatibus, commodi assumenda laboriosam consequuntur quos. Quos molestiae vel quasi optio, rem accusamus id, maxime necessitatibus autem delectus corporis!
+      </div>
+      <div class="abosolute">
+        AB
+      </div>
+      <div class="fixed">
+        FX
+      </div>
+    </section>
+  </div>
+</body>
+</html>

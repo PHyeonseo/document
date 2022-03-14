@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션01 - 기초편</title>
+    <style>
+        /*
+        position: static; -- 포지션이 아니게 한다.
+        position: absolute; - 좌표를 가진다. top,left,bottom,right;
+        (뜬다.쪼그라근다.body가 기준이 된다.)
+        position: relative; - 기준이 된다. 좌표를 가진다. 뜨오르지 않고 공간을 차지한다. 쪼그라들지 않는다.
+        position: fixed; - 화면을 기준으로 떠오른다. 좌표를 가진다. 다른 기준 따위는 없다.
+        position: sticky; - 좀 어려운데 박스처럼 있다가 마우스를 내리면 픽스드가 된다.
+        */
+
+        * {margin:0;}
+
+        body {
+            background:#ff0;
+        }
+
+        .Wrap {
+            position:relative;
+            margin:200px;
+            width:400px;
+            height:300px;
+            background: #444;
+        }
+
+        .headerWap {
+            position: sticky;
+            top:0;
+            left:0;
+            background:#fff;
+            z-index:999;
+        }
+
+
+        .contentWrap {
+            
+            margin:400px;
+            width:1000px;
+            height:300px;
+            background:#369;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            background: #f00;
+        }
+
+        .fixed {
+            position:fixed;
+            top:100px;
+            right:100px;
+            background:#336;
+        }
+
+        .popup {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index: 4;
+        }
+
+        
+        .popup2 {
+            position: absolute;
+            top:40%;
+            left:40%;
+            transform: translate(-50%,-50%);
+            z-index: 3;
+        }
+
+
+        .closePopup {
+            position:absolute;
+            bottom:30px;
+            right:30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<header class="headerWap">
+    sticky...
+</header>
+<div class="Wrap">
+    <section class="contentWrap">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima esse nesciunt dicta, voluptas aliquid laborum vitae. Nihil consequatur illum, veritatis ipsa accusamus delectus voluptates? Illum alias optio magni voluptatibus. Sint, earum. Quis suscipit omnis accusantium molestias numquam ipsam rem voluptatum ipsum similique et iure cum, quia eligendi vero voluptas delectus maxime sit officia nam nesciunt voluptatibus quae! Facilis quos vero rem cum deserunt ratione consequuntur ad dignissimos, earum velit alias iste atque aperiam voluptatum quibusdam obcaecati est quas optio odio assumenda dicta numquam eum blanditiis. In assumenda labore aliquam dolorum reiciendis nam hic eligendi ad est beatae expedita laboriosam, nesciunt incidunt sit quia saepe eos, voluptas facilis quis aperiam placeat explicabo accusantium? Ipsam aliquam mollitia ab earum quibusdam eos voluptate laborum, est architecto cupiditate deserunt vero repellendus maiores sint autem similique et ut, non minus inventore qui. Rem, quaerat quidem. Veniam vero in sed iure, illum, itaque tenetur at ducimus neque aspernatur et blanditiis ea quaerat ullam, animi quo! Eum, veritatis? Reiciendis optio maiores quidem reprehenderit quisquam omnis dolorum est, nostrum cumque perspiciatis. Officiis, tempore unde consectetur, repellendus fugiat voluptatibus at expedita dolore ipsam, quibusdam atque laudantium. Fuga beatae voluptatum quos quam? Atque distinctio id reiciendis itaque, ea laudantium adipisci voluptate debitis, dicta odio veniam ipsam esse eos perferendis maxime modi architecto error repellendus aspernatur. Nam aperiam ipsa, asperiores vero voluptates nostrum maxime reiciendis perspiciatis beatae mollitia nobis voluptas odit enim velit itaque. Quae impedit, placeat numquam provident dolorum dicta! Rem dolorum perspiciatis adipisci iure dolores ad suscipit aliquid nemo ducimus dolore tempora cupiditate repudiandae, accusantium, quisquam accusamus repellendus sequi eveniet molestiae distinctio voluptatibus officia. Quasi nesciunt culpa adipisci. Praesentium possimus, nemo molestias mollitia reprehenderit vitae accusantium iusto culpa doloremque nulla tenetur aut soluta quibusdam nesciunt totam, aliquam ratione tempore obcaecati quis natus reiciendis ab quod repellendus? Aspernatur nisi ipsa veritatis nobis, tempore totam maxime, quidem in repudiandae saepe voluptates accusamus. Quisquam dicta earum quibusdam non modi distinctio. Ipsam recusandae sit sed deleniti cupiditate tempora laboriosam molestias doloremque expedita. Impedit, quisquam dolores. Consequuntur aspernatur doloremque, fuga maiores ratione pariatur est enim id, tempora rem ducimus voluptatum quae, debitis delectus? Tenetur assumenda magnam atque doloribus culpa, fugiat, magni nihil ducimus dolorem harum cupiditate animi facere porro perspiciatis quibusdam iure unde nam, veniam neque et quae! Veniam placeat reprehenderit vitae consequatur ratione cum eaque quam qui rerum nemo quidem accusantium tenetur, libero ipsa aut explicabo corrupti, aliquid necessitatibus numquam fuga velit perferendis. Labore et dignissimos eos, maxime maiores commodi optio non. Dicta facilis rerum harum quo magni? Ex fuga fugit corrupti voluptatibus dolore tenetur. Possimus reiciendis magnam amet aut aperiam quia libero eum cumque nulla ipsum, sunt quisquam suscipit iste harum a ducimus, temporibus illum. Impedit possimus officia corporis aspernatur, consectetur aliquam pariatur atque, aliquid dolor accusamus, harum necessitatibus nemo iure. Quasi nulla, perspiciatis assumenda sunt facere suscipit incidunt laudantium ipsa cum nostrum adipisci dolores eos repellat, dignissimos voluptas. Vero unde aliquid suscipit totam aut, minus necessitatibus modi? Deserunt soluta ab, non facilis eveniet sunt quia nobis. Impedit harum quaerat sequi minima eos sed voluptatem. Tempore iusto repudiandae architecto tempora laborum quibusdam iure, sapiente ratione, magni ut distinctio at officia eligendi quas consectetur quis voluptate. Veritatis est tempora, et aliquid accusamus doloremque dolor placeat commodi veniam dolore illum cumque? Reiciendis, fugiat et aspernatur alias, similique explicabo repudiandae ea repellat corporis beatae aut numquam perspiciatis, maiores placeat omnis voluptas tempora! Magnam, dolore, officia ea sit sequi veniam quos facilis minima doloremque hic, explicabo laboriosam! Blanditiis, debitis quasi. Corporis repellendus voluptates amet culpa sint atque? Quae doloremque nemo veritatis necessitatibus natus dolorem maxime aliquam mollitia corporis vero, quos amet est tempore illo esse in minus, officiis, omnis distinctio exercitationem nam totam repellendus? Sapiente assumenda officiis obcaecati quis nihil debitis sunt tempore, quibusdam iste nulla, incidunt accusamus quas deserunt odit id consequatur alias reprehenderit? Numquam inventore delectus deleniti autem assumenda illo! Facere laboriosam ratione exercitationem explicabo rerum ut odio molestias maxime libero omnis assumenda vel, facilis, incidunt repellendus doloribus quam aspernatur iusto? Similique odio vitae provident iusto assumenda perspiciatis optio magnam, blanditiis ducimus voluptates eligendi voluptatibus hic sit temporibus animi, excepturi placeat asperiores nisi aut. Eos qui repudiandae odio quibusdam quos vel? Rem eaque officiis unde, aut laborum consectetur soluta, impedit harum assumenda ratione accusamus eius quas quidem, dolorum recusandae doloribus molestiae. Ratione modi esse rerum at velit, hic doloribus suscipit quam officia labore odio ut voluptates laudantium sapiente quibusdam ea nobis sed veniam recusandae cumque? Modi quia sit temporibus? Suscipit, dolorem id doloremque possimus omnis dignissimos blanditiis sint aperiam excepturi porro sunt totam quas deleniti repudiandae! Perspiciatis assumenda beatae natus voluptate excepturi quos corrupti dolor libero. Saepe molestias modi sed inventore vitae natus. Cumque, magnam? Explicabo numquam cumque magni voluptatibus ut, earum voluptate. Voluptatem, accusantium repudiandae laborum vero dicta voluptas obcaecati doloremque. Obcaecati eaque cupiditate accusamus quidem quos deserunt, perferendis ab debitis in, quasi ducimus dicta totam officia, amet rem dignissimos cum tempore quis commodi consectetur laboriosam placeat non. Vitae, sit soluta ratione tenetur obcaecati facere aperiam fugit. Ipsa provident quos, error sunt distinctio repudiandae minus facere sint nostrum, iure doloribus repellat reprehenderit laudantium fuga non iusto repellendus illum, laborum culpa magnam eius nihil. Dolore impedit inventore quis neque atque quo, vel harum ullam labore praesentium pariatur quam hic? Libero repellendus tempora iusto illum similique accusamus ipsam quibusdam asperiores. Consequuntur in saepe aperiam excepturi quis, consequatur sint fuga voluptatibus atque tempore ad facilis accusamus fugiat delectus rem quidem at? Nisi quas reprehenderit modi voluptates voluptatem odit facilis tempora, veritatis quibusdam sint tenetur accusantium nihil dolorem ut exercitationem eum quo. Rerum excepturi repellat porro similique ad architecto asperiores mollitia natus, assumenda fugit qui praesentium veritatis obcaecati, quisquam voluptate tempora molestiae atque nesciunt eveniet cumque pariatur sapiente ipsa! Delectus magni dolor assumenda omnis corrupti nostrum quo, esse soluta minus accusamus saepe enim amet. Quo ut eum voluptatum dolores accusamus magni unde, quam omnis quisquam dicta aliquid quidem ipsam, illo facere itaque minus. Enim magnam deleniti, voluptates nesciunt, reprehenderit voluptas doloribus dolor vitae, animi a maxime repellat ea rem ullam expedita voluptatibus vero ipsum ad quis aliquid.
+        </div>
+        <div class="absolute">
+            AB
+        </div>
+        <div class="fixed">
+            FX
+        </div>
+    </section>
+</div>
+
+<div class="popup">
+    <figure>
+        <img src="../img/menu_n01.jpg" alt="">
+    </figure>
+    <button class="closePopup">CLOSE</button>
+</div>
+
+<div class="popup2">
+    <figure>
+        <img src="../img/menu_n02.jpg" alt="">
+    </figure>
+    <button class="closePopup">CLOSE</button>
+</div>
+
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script>
+    function 팝업닫는일() {
+        $(this).parent().hide();
+    }
+    $('.closePopup').on('click', 팝업닫는일);
+</script>
+
+
+
+</body>
+
+</html>
