@@ -56,7 +56,9 @@
 }
 .mainVisual .sildeAngle i:first-child {
   left: 50px;
+  cursor: pointer;
 }
 .mainVisual .sildeAngle i:last-child {
   right: 50px;
+  cursor: pointer;
 }
