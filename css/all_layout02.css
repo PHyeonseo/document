@@ -1,0 +1,94 @@
+.mainVisual {
+  position: relative;
+}
+
+.mainVisual figure {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.mainVisual .item01 {
+  height: 600px;
+  background-image:  url(../img/main_slider_n01.jpg);
+}
+.mainVisual .item02 {
+  height: 600px;
+  background-image: url(../img/main_slider_n02.jpg);
+}
+.mainVisual .item03 {
+  height: 600px;
+  background-image: url(../img/main_slider_n03.jpg);
+}
+
+
+
+
+.mainVisual .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+.mainVisual .slick-dots li {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #ff0;
+}
+
+
+.mainVisual .slick-arrow {
+  position: absolute;
+  z-index: 999;
+
+  width: 100px;
+  height: 100px;
+  transform: translateY(-50%);
+  border: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  text-indent: -99999px;
+}
+.mainVisual .slick-prev {
+  top: 50%;
+  left: 100px;
+  transform:translateY(-50%) rotate(-45deg);
+}
+.mainVisual .slick-next {
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+
+.mainVisual .slick-dots li.slick-active {
+  background: #444;
+}
+.mainVisual .slick-dots button {
+  display: none;
+}
+
+
+/* 아이콘 활용 슬라이드 */
+.mainVisual .slideArrow i {
+  position: absolute;
+  top: 50%;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%);
+}
+.mainVisual .slideArrow i:first-child {
+  left: 100px;
+}
+.mainVisual .slideArrow i.xi-arrow-right {
+  right: 100px;
+}
