@@ -43,7 +43,14 @@
   background-color: #ff0;
 }
 
+.mainVisual .slick-dots li.slick-active {
+  background: #444;
+}
+.mainVisual .slick-dots button {
+  display: none;
+}
 
+/* 화살표 만들기 */
 .mainVisual .slick-arrow {
   position: absolute;
   z-index: 999;
@@ -70,14 +77,6 @@
 }
 
 
-.mainVisual .slick-dots li.slick-active {
-  background: #444;
-}
-.mainVisual .slick-dots button {
-  display: none;
-}
-
-
 /* 아이콘 활용 슬라이드 */
 .mainVisual .slideArrow i {
   position: absolute;
@@ -89,6 +88,6 @@
 .mainVisual .slideArrow i:first-child {
   left: 100px;
 }
-.mainVisual .slideArrow i.xi-arrow-right {
+.mainVisual .slideArrow i:last-child {
   right: 100px;
 }
