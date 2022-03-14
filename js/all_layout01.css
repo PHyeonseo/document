@@ -1,0 +1,64 @@
+.mainVisual{
+  position: relative;
+}
+.mainVisual figure {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+.mainVisual .item01 {
+  height: 600px;
+  background-image: url(../img/dwgmm.jpg);
+}
+.mainVisual .item02 {
+  height: 600px;
+  background-image: url(../img/t1mm.jpg);
+}
+.mainVisual .item03 {
+  height: 600px;
+  background-image: url(../img/gegmm.jpg);
+}
+
+
+/* 슬라이드 위치 표시 */
+.mainVisual .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.mainVisual .slick-dots li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.mainVisual .slick-dots li.slick-active {
+  background: #444;
+}
+.mainVisual .slick-dots button {
+  display: none;
+}
+
+/* 아이콘활용 슬라이드 */
+.mainVisual .sildeAngle i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.mainVisual .sildeAngle i:first-child {
+  left: 50px;
+  cursor: pointer;
+}
+.mainVisual .sildeAngle i:last-child {
+  right: 50px;
+  cursor: pointer;
+}
