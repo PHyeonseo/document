@@ -1,0 +1,141 @@
+.headerWrap {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ddd;
+}
+.headerWrap .service {
+  padding: 30px 0;
+  font-size: 15px;
+  width: 200px;
+  margin: 0 auto;
+
+}
+.headerWrap .service span {
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(0,0,0,0.5); 
+  transition: 2s;
+}
+.headerWrap .service:hover span {
+  width: 100px;
+}
+
+
+.content {
+  
+}
+.content .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .container figure {
+  padding: 0 15px;
+  width: 400px;
+}
+.content .container figure img {
+  width: 100%;
+}
+
+
+.sec01 {
+  padding: 100px 0;
+}
+.sec01 .inner {
+  position: relative;
+}
+.sec01 .inner a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+.sec01 .inner:hover a {
+  opacity: 1;
+}
+
+/* DWG */
+.sec02 .dwg {
+  position: relative;
+  overflow: hidden;
+}
+.sec02 .dwg a {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  line-height: 200px;
+
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+
+  transition: 0.7s;
+}
+.sec02 .dwg:hover a {
+  top: calc(100% - 210px);
+}
+
+/* T1 */
+.sec02 .t1 {
+  position: relative;
+  overflow: hidden;
+}
+.sec02 .t1 a {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  line-height: 200px;
+
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+
+  transition: 0.7s;
+}
+.sec02 .t1:hover a {
+  left: calc(100% - 370px);
+}
+
+/* GEN */
+.sec02 .gen {
+  position: relative;
+  overflow: hidden;
+}
+.sec02 .gen a {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  line-height: 200px;
+
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+
+  transition: 0.7s;
+}
+.sec02 .gen:hover a {
+  right: calc(100% - 370px);
+}
