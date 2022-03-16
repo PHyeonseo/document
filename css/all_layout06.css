@@ -1,0 +1,63 @@
+.headerWrap {
+  padding: 50px 0;
+  color: #fff;
+  background: #f00;
+  display: none;
+}
+.headerWrap .container {
+  width: 1200px;
+  margin: 0 auto;
+} 
+.xi-close {
+  margin: 0 1200px;
+  cursor: pointer;
+}
+
+
+.tabMenu {
+  padding: 100px 0;
+  background: #f2f2f2;
+}
+.tabMenu .container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.tabMenu .tabLink {
+  display: flex;
+}
+.tabMenu .tabLink li {
+  flex: 1;
+}
+
+.tabMenu .tabLink li.active {
+  color: #f00;
+}
+
+
+
+.tabMenu .tabContent {
+
+}
+.tabMenu .tabContent>div {
+  display: none;
+}
+
+.tabMenu .tabContent>div.active {
+  display: block;
+}
+
+
+.bgFixed {
+  padding: 200px 0;
+  text-align: center;
+  color: #fff;
+  background: url(../img/main_slider_n01.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+}
+.bgFixed h2 {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 3em;
+  margin-bottom: 30px
+}
