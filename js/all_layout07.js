@@ -14,7 +14,7 @@ $('.topBanner .container i ').on('click',topBannerHandle)
 $('.visualSilde').slick( {
   arrows:false,
   autoplay:true,
-  autoplaySpeed:1000,
+  autoplaySpeed:3000,
   dots:true  //슬라이드 숫자
 });
 
