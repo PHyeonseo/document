@@ -2,16 +2,26 @@
   padding: 50px 0;
   color: #fff;
   background: #f00;
-  display: none;
+  /* display: none; */
 }
 .headerWrap .container {
   width: 1200px;
   margin: 0 auto;
 } 
-.xi-close {
-  margin: 0 1200px;
-  cursor: pointer;
+.toggleBtn {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
 }
+.toggleBtn i {
+  background-color: #f00;
+}
+/* i {
+  position: absolute;
+  background: #f00;
+  right: 20%;
+} */
 
 
 .tabMenu {
@@ -19,17 +29,20 @@
   background: #f2f2f2;
 }
 .tabMenu .container {
+  padding: 15px 0;
   width: 600px;
   margin: 0 auto;
+  /* background: #ff1; */
 }
 
 .tabMenu .tabLink {
   display: flex;
+  margin: 15px 0;
 }
 .tabMenu .tabLink li {
   flex: 1;
+  text-align: center;
 }
-
 .tabMenu .tabLink li.active {
   color: #f00;
 }
@@ -39,8 +52,15 @@
 .tabMenu .tabContent {
 
 }
+
 .tabMenu .tabContent>div {
   display: none;
+  padding: 20px 0;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
 }
 
 .tabMenu .tabContent>div.active {
@@ -52,7 +72,7 @@
   padding: 200px 0;
   text-align: center;
   color: #fff;
-  background: url(../img/main_slider_n01.jpg) no-repeat center center/cover;
+  background: url(../img/menu_n03.jpg) no-repeat center center/cover;
   background-attachment: fixed;
 }
 .bgFixed h2 {

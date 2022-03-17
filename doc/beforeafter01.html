@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상요소 만들기 01</title>
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+    * {margin: 0; box-sizing: border-box;}
+    body {line-height: 1;}
+
+    .ba {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .ba:nth-child(even) {
+      background: #f2f2f2;
+    }
+    .bas01 h2::before {
+      content: "bdefore 자리";
+    }
+    .bas01 h2::after {
+      content: "after 자리";
+    }
+    .bas02 h2::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 20px 0;
+      background: #369;
+      margin: 15px auto;
+    }
+    .bas03 h2::before {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 2px;
+      background: #369;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+    .bas03 h2::after {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 2px;
+      background: #369;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+    .bas04 li::before {
+      content: "\e921";
+      font-family: xeicon!important;
+      display: inline-block;
+      vertical-align: middle;
+      color: #f00;
+      margin-right: 10px;
+    }
+
+
+    .bas05 p {
+      margin-bottom: 15px;
+    }
+    .bas05 .container {
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .bas05 .container figure {
+      position: relative;
+      flex: 1;
+      padding: 0 15px;
+    }
+    .bas05 .container figure img {
+      width: 100%;
+    }
+    .bas05 .container figure::after {
+      content: attr(data-num);
+
+      position: absolute;
+      top: -10px;
+      left: -10px;
+
+      width: 60px;
+      height: 60px;
+
+      background: #f00;
+      color: #fff;
+      font-size: 30px;
+      line-height: 60px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="ba bas01">
+    <h2>LOREM</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+  </div>
+  <div class="ba bas02">
+    <h2>LOREM</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+  </div>
+  <div class="ba bas03">
+    <h2>LOREM</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+  </div>
+  <div class="ba bas04">
+    <h2>LOREM <i class="xi-close"></i></h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </div>
+  <div class="ba bas05">
+    <h2>LOREM</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <div class="container">
+      <figure data-num="01">
+        <img src="../images/lesedilarona01.jpg" alt="">
+      </figure>
+      <figure data-num="02">
+        <img src="../images/lesedilarona02.jpg" alt="">
+      </figure>
+      <figure data-num="03">
+        <img src="../images/lesedilarona03.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

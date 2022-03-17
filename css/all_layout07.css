@@ -1,0 +1,213 @@
+.Wrap {}
+
+
+/* topBanner : park 2022.03.17 최종수정  */
+.topBanner {
+  padding: 24px 0;
+  background: #f3f3f3;
+}
+
+.topBanner .container {
+  position: relative;
+  /* background: #ddd; */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.topBanner .container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 0.04em;
+}
+
+.topBanner .container p {
+  display: inline-block;
+  height: 16px;
+  list-style: 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
+.topBanner .container a {
+  margin-left: 20px;
+  padding: 0 20px;
+  border: 1px solid #333;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.topBanner .container i {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+/*header : park 2022.03.17 최종수정*/
+.headerWrap {}
+
+.headerWrap .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+.headerWrap .container>* {
+  padding: 0 15px;
+}
+
+.headerWrap .searchForm {
+  margin-left: auto;
+}
+
+.gnb {}
+
+.gnb>ul {
+  display: flex;
+}
+
+.gnb>ul>li {
+  position: relative;
+  padding: 0 20px;
+}
+
+.gnb>ul>li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: #333;
+}
+
+.gnb>ul>li:nth-child(1):after {
+  display: none;
+}
+
+.headerWrap .searchForm input[type="search"] {
+  padding: 3px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.headerWrap .searchForm input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.headerWrap .searchForm button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.headerWrap .searchForm button i {
+  font-size: 15px;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+
+/* mainVisual : park 2022.03.17 최종수정 */
+
+.mainVisual .visualSilde {
+  border-top: 1px solid #ddd;
+}
+
+.mainVisual .visualSilde figure {
+  height: 600px;
+}
+.mainVisual .visualSilde figure.slick-active {
+
+}
+.mainVisual .visualSilde figure .inner {
+  width: 1200px;
+  margin: 300px auto 0 auto;
+  padding: 0 15px;
+  color: #fff;
+}
+.mainVisual .visualSilde figure .inner h3 {
+  opacity: 0;
+  transform: translateY(100px);
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 0 0 2px #333;
+  transition: 1s 0.5s;
+}
+.mainVisual .visualSilde figure .inner p {
+  opacity: 0;
+  transform: translateY(100px);
+  font-size: 15px;
+  font-weight: 300;
+  transition: 1s 1s;
+}
+.mainVisual .visualSilde figure.slick-active .inner h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mainVisual .visualSilde figure.slick-active .inner p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mainVisual .visualSilde .item01 {
+  background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+  /*반복여부  x축  y축  크기*/
+}
+
+.mainVisual .visualSilde .item02 {
+  background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSilde .item03 {
+  background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+.mainVisual .visualSilde .slick-dots {
+  position: absolute;
+  /*slick 슬라이드 relative기준이 있음*/
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 10px;
+}
+.mainVisual .visualSilde .slick-dots li {
+  width: 100px;
+  height: 5px;
+  background: #333;
+  transition: 1s;
+}
+.mainVisual .visualSilde .slick-dots li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #f00;
+}
+.mainVisual .visualSilde .slick-dots li.slick-active::after {
+  width: 100%;
+  transition: 3s;
+}
+.mainVisual .visualSilde .slick-dots li.slick-active {
+  background: #fff;
+}
+.mainVisual .visualSilde .slick-dots button {
+  display: none;
+}
