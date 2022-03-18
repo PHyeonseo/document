@@ -27,7 +27,7 @@
   height: 16px;
   list-style: 14px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.025em;
 }
@@ -132,9 +132,33 @@
 .mainVisual .visualSilde figure {
   height: 600px;
 }
-.mainVisual .visualSilde figure.slick-active {
+.mainVisual .visualSilde .msLeft {
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
 
+  border-top: 1px solid #fff;
+  border-left:1px solid #fff;
+
+  transform: translateY(-50%) rotate(-45deg);
 }
+.mainVisual .visualSilde .msRight {
+  position: absolute;
+  top: 50%;
+  right: 200px;
+  width: 200px;
+  height: 200px;
+
+  border-top: 1px solid #fff;
+  border-left:1px solid #fff;
+
+  transform: translateY(-50%) rotate(135deg);
+}
+
+
 .mainVisual .visualSilde figure .inner {
   width: 1200px;
   margin: 300px auto 0 auto;
@@ -210,4 +234,230 @@
 }
 .mainVisual .visualSilde .slick-dots button {
   display: none;
+}
+
+
+
+/* mainProduct : park 2022.03.18 최종수정 */
+.mainProduct {
+  padding: 100px 0; 
+  text-align: center;
+  color: #555;
+}
+.mainProduct h2 {
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+.mainProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.mainProduct .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.mainProduct .container figure {
+  position: relative;
+  flex: 1;
+  margin: 0 15px;
+}
+.mainProduct .container figure .inner {
+  margin-bottom: 15px;
+}
+.mainProduct .container figure strong {
+  display: block;
+  margin: 10px;
+}
+.mainProduct .container figure a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #333;
+  color: #fff;
+}
+.mainProduct .container figure a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+.mainProduct .inner {
+  overflow: hidden;
+}
+.mainProduct .inner img {
+  transition: 0.5s;
+}
+.mainProduct .inner img:hover {
+  transform: scale(1.5);
+}
+.mainProduct .container figure .label {
+  position: absolute;
+  top: 0;
+  right: -30px;
+
+  border-top: 10px solid #f00;
+  border-left: 50px solid #f00;
+  border-bottom: 10px solid #f00;
+  border-right: 10px solid transparent;
+}
+.mainProduct .container figure .label span {
+  position: absolute;
+  top: -7px;
+  left: -35px;
+  color: #fff;
+
+  font-size: 14px;
+}
+
+
+
+/* eventBanner : park 2022.03.18 최종수정  */
+.eventBanner {
+  padding: 100px 0;
+  background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+  text-align: center;
+  color: #fff;
+  filter: grayscale(1); /*이미지 색빼기*/
+}
+.eventBanner h2 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+.eventBanner p {
+  font-size: 14px;  
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+}
+.eventBanner i {
+  padding: 5px;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+
+
+/* eventProduct : park 2022.03.18 최종수정 */
+.eventProduct {
+  padding: 100px 0;
+}
+.eventProduct .container {
+  display: flex;  
+  width: 1200px;
+  margin: 0 auto;
+}
+.eventProduct .container>div {
+  padding: 0 15px;
+}
+.eventProduct .left {
+  width: 40%;
+}
+.eventProduct .left .eProductSlide {
+  border: 5px solid #ddd;
+  padding: 5px;
+}
+.eventProduct .right {
+  display: flex;
+  align-items: center;
+
+  width: 60%;
+}
+.eventProduct h3 {
+  font-size: 19px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+.eventProduct p {
+  font-size: 15px;  
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.eventProduct i {
+  padding: 13px;
+  background: #333;
+  color: #fff;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+
+
+
+/* allProduct : park 2022.03.18 최종수정 */
+.allProduct {
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+  background: #f2f2f2;
+}
+.allProduct h2 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+.allProduct p {
+  font-size: 15px;  
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.allProduct .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.allProduct .container figure {
+  padding: 0 15px;
+}
+.allProduct .inner {
+  margin-bottom: 20px;
+}
+.allProduct .inner + strong {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: 300;
+}
+.allProduct .slick-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.allProduct .slick-dots li {
+  width: 13px;
+  height: 13px;
+  background: #333;
+  border-radius: 50%;
+}
+.allProduct .slick-dots li.slick-active {
+  background: #ddd;
+}
+.allProduct .slick-dots li button {
+  display: none;
+}
+.allProduct i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  background: #333;;
+}
+.allProduct i:first-child {
+  margin-left: -700px;
+}
+.allProduct i:last-child {
+  margin-left: 700px;
 }
