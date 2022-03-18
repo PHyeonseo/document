@@ -354,13 +354,14 @@
 }
 .eventProduct .container>div {
   padding: 0 15px;
+  text-align: center;
 }
 .eventProduct .left {
   width: 40%;
 }
 .eventProduct .left .eProductSlide {
-  border: 5px solid #ddd;
   padding: 5px;
+  border: 5px solid #ddd;
 }
 .eventProduct .right {
   display: flex;
@@ -371,7 +372,6 @@
 .eventProduct h3 {
   font-size: 19px;
   font-weight: 100;
-  text-align: center;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
 }
@@ -383,12 +383,11 @@
 }
 .eventProduct i {
   padding: 13px;
-  background: #333;
+  background: #f2f2f2;
   color: #fff;
   border-radius: 7px;
-  margin-right: 15px;
+  margin: 0 5px;
 }
-
 
 
 /* allProduct : park 2022.03.18 최종수정 */

@@ -31,7 +31,16 @@ $(function () {
   $('.eProductSlide').slick({
     arrows:false,
     autoplay: true,
+    autoplaySpeed: 0.8
   })
+  $('.eventProduct i:nth-of-type(1)').on('click', function(){
+    $('.eProductSlide').slick('slickPause')
+  });
+  $('.eventProduct i:nth-of-type(2)').on('click', function(){
+    $('.eProductSlide').slick('slickPlay')
+  });
+
+
 
   // allProduct : park 2022.03.18 최종수정
   $('.aproductSlide').slick({
