@@ -11,6 +11,7 @@ $(function () {
 
 
 
+  // mainVisual : park 2022.03.17 최종수정
   $('.visualSlide').slick({
     arrows: true,
     autoplay: true,
@@ -22,10 +23,14 @@ $(function () {
   });
 
 
+
   $('.visualSlide figure').eq(1).addClass('oo');
   $('.visualSlide').on('afterChange', function (e, s, c) {
     $('.visualSlide figure').eq(c + 1).addClass('oo').siblings().removeClass('oo');
   })
+
+
+
 
   // eventProduct : park 2022.03.18 최종수정
   $('.eProductSlide').slick({
@@ -57,8 +62,7 @@ $(function () {
 
 
 
-  // 동영상넣기 : park 2022.03.21 최종수정
-
+  // movieBg : park 2022.03.21 최종수정
   $("#bgndVideo").YTPlayer({
     videoURL: 'https://www.youtube.com/watch?v=U1z00Oj0jdI',
     containment: '.movieBg',
@@ -77,8 +81,9 @@ $(function () {
     $("#bgndVideo").YTPPlay();
   })
 
-  // 클래스 추가,삭제: park 2022.03 .21 최종수정
 
+
+  // customerArea 클래스 추가,삭제: park 2022.03 .21 최종수정
   $('.tabMenu li').on('click', function () {
     var idx = $(this).index();
     $(this).addClass('oo').siblings().removeClass('oo');
