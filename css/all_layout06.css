@@ -4,19 +4,23 @@
   background: #f00;
   /* display: none; */
 }
+
 .headerWrap .container {
   width: 1200px;
   margin: 0 auto;
-} 
+}
+
 .toggleBtn {
   width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: end;
 }
+
 .toggleBtn i {
   background-color: #f00;
 }
+
 /* i {
   position: absolute;
   background: #f00;
@@ -28,6 +32,7 @@
   padding: 100px 0;
   background: #f2f2f2;
 }
+
 .tabMenu .container {
   padding: 15px 0;
   width: 600px;
@@ -39,19 +44,19 @@
   display: flex;
   margin: 15px 0;
 }
+
 .tabMenu .tabLink li {
   flex: 1;
   text-align: center;
 }
+
 .tabMenu .tabLink li.active {
   color: #f00;
 }
 
 
 
-.tabMenu .tabContent {
-
-}
+.tabMenu .tabContent {}
 
 .tabMenu .tabContent>div {
   display: none;
@@ -75,6 +80,7 @@
   background: url(../img/menu_n03.jpg) no-repeat center center/cover;
   background-attachment: fixed;
 }
+
 .bgFixed h2 {
   font-size: 15px;
   font-weight: 100;
