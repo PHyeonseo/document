@@ -209,6 +209,10 @@
   color: #fff;
 }
 
+.mainVisual .visualSlide figure.item02 .inner {
+  color: #333;
+}
+
 .mainVisual .visualSlide figure .inner h3 {
   opacity: 0;
   transform: translateY(100px);
@@ -646,7 +650,7 @@
 
 .customerArea .container>div:hover i {
   opacity: 1;
-  animation: heart 1s infinite;
+  animation: heart 0.6s infinite;
 }
 
 @keyframes heart {
