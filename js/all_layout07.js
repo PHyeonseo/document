@@ -91,5 +91,17 @@ $(function () {
   })
 
 
-  /////////////////////////////////
+
+  // footerWrap top, bottom : park 2022.03.22 최종수정
+  $('#link').on('change', function () {
+    let linkSite = $(this).val();
+    if (!linkSite) return;
+    window.open(linkSite)
+  })
+
+  // 팝업창 닫기
+  $('.popup01 button').on('click', function () {
+    $(this).parent().hide();
+  })
+  ///////////////////////////////// sex
 })
