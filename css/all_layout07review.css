@@ -1,0 +1,810 @@
+.Wrap {}
+
+
+/* topBanner : park 2022.03.17 최종수정  */
+.topBanner {
+  padding: 24px 0;
+  background: #f3f3f3;
+}
+
+.topBanner .container {
+  position: relative;
+  /* background: #ddd; */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.topBanner .container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 0.04em;
+}
+
+.topBanner .container p {
+  display: inline-block;
+  height: 16px;
+  list-style: 14px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
+.topBanner .container a {
+  margin-left: 20px;
+  padding: 0 20px;
+  border: 1px solid #333;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.topBanner .container i {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+/*header : park 2022.03.17 최종수정*/
+.headerWrap {}
+
+.headerWrap .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+.headerWrap .container>* {
+  padding: 0 15px;
+}
+
+.headerWrap .searchForm {
+  margin-left: auto;
+}
+
+.gnb {}
+
+.gnb>ul {
+  display: flex;
+}
+
+.gnb>ul>li {
+  position: relative;
+  padding: 0 14px;
+}
+
+.gnb>ul>li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: #333;
+}
+
+.gnb>ul>li:nth-child(1):after {
+  display: none;
+}
+
+.headerWrap .searchForm input[type="search"] {
+  padding: 3px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.headerWrap .searchForm input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.headerWrap .searchForm button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.headerWrap .searchForm button i {
+  font-size: 15px;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+
+/* mainVisual : park 2022.03.17 최종수정 */
+
+.mainVisual .visualSlide {
+  border-top: 1px solid #ddd;
+}
+
+.mainVisual .visualSlide figure {
+  position: relative;
+  height: 600px;
+}
+
+.mainVisual .visualSlide figure i {
+  position: absolute;
+  top: 80px;
+  right: 200px;
+
+  font-size: 80px;
+  color: #f00;
+
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.mainVisual .visualSlide figure.oo i {
+  opacity: 1;
+  animation: cafe 1s infinite;
+}
+
+@keyframes cafe {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.mainVisual .visualSlide .msLeft {
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.mainVisual .visualSlide .msRight {
+  position: absolute;
+  top: 50%;
+  right: 200px;
+  width: 100px;
+  height: 100px;
+
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+
+  transform: translateY(-50%) rotate(135deg);
+}
+
+
+.mainVisual .visualSlide figure .inner {
+  width: 1200px;
+  margin: 300px auto 0 auto;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.mainVisual .visualSlide figure.item02 .inner {
+  color: #fff;
+}
+
+.mainVisual .visualSlide figure .inner h3 {
+  opacity: 0;
+  transform: translateY(100px);
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 0 0 2px #333;
+  transition: 1s 0.5s;
+}
+
+.mainVisual .visualSlide figure .inner p {
+  opacity: 0;
+  transform: translateY(100px);
+  font-size: 15px;
+  font-weight: 300;
+  transition: 1s 1s;
+}
+
+.mainVisual .visualSlide figure.slick-active .inner h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mainVisual .visualSlide figure.slick-active .inner p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mainVisual .visualSlide .item01 {
+  background: url(../imgs/mainSlide1.jpg) no-repeat center center/cover;
+  /*반복여부  x축  y축  크기*/
+}
+
+.mainVisual .visualSlide .item02 {
+  background: url(../imgs/mainSlide2.jpg) no-repeat center center/cover;
+}
+
+
+.mainVisual .visualSlide .slick-dots {
+  position: absolute;
+  /*slick 슬라이드 relative기준이 있음*/
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 10px;
+}
+
+.mainVisual .visualSlide .slick-dots li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #333;
+  transition: 1s;
+}
+
+.mainVisual .visualSlide .slick-dots li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 50%;
+  background: #f00;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active::after {
+  width: 100%;
+  transition: 3s;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active {
+  background: #fff;
+}
+
+.mainVisual .visualSlide .slick-dots button {
+  display: none;
+}
+
+
+
+/* mainProduct : park 2022.03.18 최종수정 */
+.mainProduct {
+  padding: 100px 0;
+  text-align: center;
+  color: #555;
+}
+
+.mainProduct h2 {
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.mainProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+
+.mainProduct .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mainProduct .container figure {
+  position: relative;
+  flex: 1;
+  margin: 0 15px;
+}
+
+.mainProduct .container figure .inner {
+  margin-bottom: 15px;
+}
+
+.mainProduct .container figure strong {
+  display: block;
+  margin: 10px;
+}
+
+.mainProduct .container figure a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #333;
+  color: #fff;
+}
+
+.mainProduct .container figure a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.mainProduct .inner {
+  overflow: hidden;
+}
+
+.mainProduct .inner img {
+  transition: 0.5s;
+}
+
+.mainProduct .inner img:hover {
+  transform: scale(1.3);
+}
+
+.mainProduct .container figure .label {
+  position: absolute;
+  top: 0;
+  right: -30px;
+
+  border-top: 10px solid #f00;
+  border-left: 50px solid #f00;
+  border-bottom: 10px solid #f00;
+  border-right: 10px solid transparent;
+}
+
+.mainProduct .container figure .label span {
+  position: absolute;
+  top: -7px;
+  left: -35px;
+  color: #fff;
+
+  font-size: 14px;
+}
+
+
+
+/* eventBanner : park 2022.03.18 최종수정  */
+.eventBanner {
+  padding: 100px 0;
+  background: url(../imgs/main_alist_ta.jpg) no-repeat fixed center center/cover;
+  text-align: center;
+  color: #fff;
+  /*이미지 색빼기*/
+}
+
+.eventBanner h2 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.eventBanner p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+}
+
+.eventBanner i {
+  padding: 5px;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+
+
+/* eventProduct : park 2022.03.18 최종수정 */
+.eventProduct {
+  padding: 100px 0;
+}
+
+.eventProduct .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.eventProduct .container>div {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.eventProduct .left {
+  width: 40%;
+}
+
+.eventProduct .left .eProductSlide {
+  padding: 5px;
+}
+
+.eventProduct .right {
+  display: flex;
+  align-items: center;
+
+  width: 60%;
+}
+
+.eventProduct h3 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.eventProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+
+.eventProduct i {
+  padding: 13px;
+  background: #f2f2f2;
+  color: #fff;
+  border-radius: 7px;
+  margin: 0 5px;
+}
+
+
+/* allProduct : park 2022.03.18 최종수정 */
+.allProduct {
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.allProduct h2 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.allProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+
+.allProduct .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.allProduct .container figure {
+  padding: 0 15px;
+}
+
+.allProduct .inner {
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.allProduct .slick-center .inner{
+  transform: scale(1.2);
+}
+
+.allProduct .inner+strong {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.allProduct .slick-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.allProduct .slick-dots li {
+  width: 13px;
+  height: 13px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.allProduct .slick-dots li.slick-active {
+  background: #ddd;
+}
+
+.allProduct .slick-dots li button {
+  display: none;
+}
+
+.allProduct i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  background: #333;
+  ;
+}
+
+.allProduct i:first-child {
+  margin-left: -700px;
+}
+
+.allProduct i:last-child {
+  margin-left: 700px;
+}
+
+
+/* movieBg : park 2022.03.21 최종수정 */
+.movieBg {
+  padding: 300px 0;
+  background: #000;
+
+  color: #fff;
+  text-align: center;
+}
+
+.movieBg h3 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.movieBg p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+
+.movieBg i {
+  font-size: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+}
+
+
+/* customerArea 가로배치 클래스 추가,삭제 : park 2022.03.21 최종수정 */
+.customerArea {
+  padding: 100px 0;
+}
+
+.customerArea .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.customerArea .container>div {
+  position: relative;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.customerArea .container>div .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #9acd32;
+  color: #fff;
+  border: 3px solid #9acd32;
+  border-radius: 5px;
+  padding: 15px 30px;
+
+  transition: 0.5s;
+}
+
+.customerArea .container>div .btn:hover {
+  background: #fff;
+  color: #9acd32;
+
+  border-radius: 30px;
+}
+
+.customerArea .container>div img {
+  filter: grayscale(1);
+}
+
+.customerArea .container>div img:hover {
+  filter: grayscale(0);
+}
+
+.customerArea .container>div i {
+  position: absolute;
+  top: 50px;
+  right: 9%;
+
+  font-size: 40px;
+  color: #f00;
+
+  opacity: 0;
+}
+
+.customerArea .container>div:hover i {
+  opacity: 1;
+  animation: cafe 0.6s infinite;
+}
+
+@keyframes cafe {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.customerArea .tabMenu {
+  display: flex;
+}
+
+.customerArea .tabMenu>li {
+  flex: 1;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.customerArea .tabMenu>li.oo {
+  background: #369;
+}
+
+.customerArea .tabMenu>li~li {
+  border-left: 1px solid #fff;
+}
+
+.customerArea .tabContent>div {
+  display: none;
+}
+
+.customerArea .tabContent>div.oo {
+  display: block;
+}
+
+.customerArea .tabContent a {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px dotted #ddd;
+}
+
+.customerArea .tabContent strong {
+  display: block;
+  width: 400px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+/* footerWrap top, bottom : park 2022.03.22 최종수정 */
+
+.footerWrap {
+  background: #333;
+  color: #f2f2f2;
+  line-height: 60px;
+}
+
+.footerWrap .top {
+  border-bottom: 1px solid #666;
+}
+
+.footerWrap .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footerWrap .container>dl {
+  display: flex;
+  padding: 0 15px;
+  gap: 40px;
+}
+
+.footerWrap .container dd {
+  position: relative;
+}
+
+.footerWrap .container dd::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -20px;
+
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: #f2f2f2;
+
+  transform: translateY(-50%);
+}
+
+.footerWrap .container>div {
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+.footerWrap .container>* {
+  padding: 0 15px;
+}
+
+.footerWrap .link select {
+  background: #333;
+  width: 150px;
+  font-size: 14px;
+  border: 2px solid #f2f2f2;
+}
+
+
+/* 팝업만들기 */
+.popup01 {
+  position: absolute;
+  inset: 50% auto auto 60%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #333;
+  /* padding: 30px; */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup01 img {
+  width: 400px;
+}
+
+.popup01 button {
+  position: absolute;
+  inset: auto 20px 20px auto;
+
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #333;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
