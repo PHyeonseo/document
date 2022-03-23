@@ -560,7 +560,7 @@
 
 /* movieBg : park 2022.03.21 최종수정 */
 .movieBg {
-  padding: 300px 0;
+  padding: 100px 0;
   background: #000;
   filter: grayscale(1);
 

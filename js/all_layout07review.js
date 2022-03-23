@@ -52,7 +52,7 @@ $(function () {
     arrows: false,
     dots: true,
     slidesToShow: 5, //슬라이드 보여주는 개수
-    centerMode:true
+    centerMode: true
   })
   $('.allProduct i:first-child').on('click', function () {
     $('.aproductSlide').slick('slickPrev');
@@ -65,7 +65,7 @@ $(function () {
 
   // movieBg : park 2022.03.21 최종수정
   $("#bgndVideo").YTPlayer({
-    videoURL: 'https://www.youtube.com/watch?v=sTqtrke-eLw',
+    videoURL: 'https://www.youtube.com/watch?v=bY8Heg1d6X8',
     containment: '.movieBg',
     autoPlay: true,
     mute: true,
@@ -104,5 +104,25 @@ $(function () {
   $('.popup01 button').on('click', function () {
     $(this).parent().hide();
   })
-  ///////////////////////////////// sex
+
+
+
+  // 클릭시 젤위로 스크롤
+  $('.toTop').on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  })
+
+  $(window).on('scroll', function () {
+    let sct = $(window).scrollTop()
+    if (sct > 200) {
+      $('.toTop').fadeIn(1000)
+    } else {
+      $('.toTop').fadeOut(1000)
+    }
+  })
+
+  ///////////////////////////////// 
 })

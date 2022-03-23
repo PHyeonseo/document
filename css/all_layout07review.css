@@ -4,7 +4,7 @@
 /* topBanner : park 2022.03.17 최종수정  */
 .topBanner {
   padding: 24px 0;
-  background: #f3f3f3;
+  background: #555;
 }
 
 .topBanner .container {
@@ -19,6 +19,8 @@
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.025em;
+  color: #f00;
+  font-weight: 500;
 }
 
 .topBanner .container p {
@@ -26,6 +28,7 @@
   height: 16px;
   list-style: 14px;
   margin-bottom: 10px;
+  color: #fff;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.025em;
@@ -50,6 +53,7 @@
 
 
 /*header : park 2022.03.17 최종수정*/
+.headerWrap {}
 .headerWrap .container {
   display: flex;
   width: 1200px;
@@ -240,12 +244,16 @@
 }
 
 .mainVisual .visualSlide .item01 {
-  background: url(../imgs/mainSlide1.jpg) no-repeat center center/cover;
+  background: url(../imgs/Slide01.jpg) no-repeat center center/cover;
   /*반복여부  x축  y축  크기*/
 }
 
 .mainVisual .visualSlide .item02 {
-  background: url(../imgs/mainSlide2.jpg) no-repeat center center/cover;
+  background: url(../imgs/Slide02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .item03 {
+  background: url(../imgs/Slide03.jpg) no-repeat center center/cover;
 }
 
 
@@ -302,6 +310,7 @@
   font-weight: 500;
   letter-spacing: 0.025em;
   margin-bottom: 10px;
+  color: #f00;
 }
 
 .mainProduct p {
@@ -353,7 +362,7 @@
 }
 
 .mainProduct .inner img:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .mainProduct .container figure .label {
@@ -381,7 +390,7 @@
 /* eventBanner : park 2022.03.18 최종수정  */
 .eventBanner {
   padding: 100px 0;
-  background: url(../imgs/main_alist_ta.jpg) no-repeat fixed center center/cover;
+  background: url(../imgs/T1_back.png) no-repeat fixed center center/cover;
   text-align: center;
   color: #fff;
   /*이미지 색빼기*/
@@ -558,7 +567,7 @@
 
 /* movieBg : park 2022.03.21 최종수정 */
 .movieBg {
-  padding: 300px 0;
+  padding: 150px 0;
   background: #000;
 
   color: #fff;
@@ -803,4 +812,23 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+}
+.popup01 button:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* 스크롤 버튼만들기 */
+.toTop {
+  position: fixed;
+  inset: auto 50px 100px auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toTop i {
+  padding: 10px;
+  background: #333;
+  color: #fff;
 }

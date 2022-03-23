@@ -103,5 +103,25 @@ $(function () {
   $('.popup01 button').on('click', function () {
     $(this).parent().hide();
   })
+
+
+  // 클릭시 젤위로 스크롤
+  $('.toTop').on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  })
+
+  $(window).on('scroll', function () {
+    let sct = $(window).scrollTop()
+    if (sct > 200) {
+      $('.toTop').fadeIn(1000)
+    } else {
+      $('.toTop').fadeOut(1000)
+    }
+  })
+
+
   ///////////////////////////////// sex
 })
