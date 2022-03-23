@@ -1,0 +1,432 @@
+/* topBanner : park 2022.03.17 최종수정  */
+.topBanner {
+  padding: 24px 0;
+  background: #555;
+}
+
+.topBanner .container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.topBanner .container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #f00;
+  font-weight: 500;
+}
+
+.topBanner .container p {
+  display: inline-block;
+  height: 16px;
+  list-style: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
+.topBanner .container a {
+  margin-left: 20px;
+  padding: 0 20px;
+  border: 1px solid #333;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.topBanner .container i {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*header : park 2022.03.17 최종수정*/
+.headerWrap .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+.headerWrap .container>* {
+  padding: 0 15px;
+}
+
+.headerWrap .searchForm {
+  margin-left: auto;
+}
+
+.gnb {}
+
+.gnb>ul {
+  display: flex;
+}
+
+.gnb>ul>li {
+  position: relative;
+  padding: 0 14px;
+}
+
+.gnb>ul>li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: #333;
+}
+
+.gnb>ul>li:nth-child(1):after {
+  display: none;
+}
+
+.headerWrap .searchForm input[type="search"] {
+  padding: 3px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.headerWrap .searchForm input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.headerWrap .searchForm button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.headerWrap .searchForm button i {
+  font-size: 14px;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+
+/* 서브페이지 */
+.subPage .greeting {
+  padding: 100px 0;
+  letter-spacing: -0.025em;
+  border-top: 1px solid #888;
+  background: #888;
+}
+.subPage .greeting h2 {
+  font-size: 40px;
+  color: #f00;
+  text-align: center;
+}
+.subPage .greeting h2::after {
+  content: "";
+  display: block;
+  width: 450px;
+  height: 2px;
+  background: #f00;
+  margin: 15px auto;
+}
+.subPage .greeting>p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+.subPage .greeting>p span {
+  color: rgb(33, 19, 223);
+  font-weight: 700;
+}
+.subPage .greeting .cotainer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.subPage .greeting .cotainer>div {
+  width: 60%;
+}
+.subPage .greeting .cotainer>figure {
+  width: 40%;
+}
+.subPage .greeting .cotainer h3 {
+  font-size: 18px;
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+.subPage .greeting .cotainer h3 span {
+  font-weight: 900;
+  color: #f00;
+}
+.subPage .greeting .cotainer p {
+  font-weight: 300;
+  line-height: 1.3;
+}
+.subPage .greeting .cotainer p strong {
+  font-weight: 500;
+  color: #f00;
+}
+
+
+.subPage .info {
+  padding: 100px 0;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+.subPage .info .cotainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+.subPage .info h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.subPage .info h3::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background: #f00;
+  margin-right: 10px;
+}
+
+.subPage .infoTable {
+  width: 100%;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.subPage .infoTable th {
+  font-weight: 700;
+  background: #999;
+  padding: 15px;
+}
+.subPage .infoTable td {
+  padding: 15px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.subPage .infoTable th~th {
+  border-left: 1px solid #333;
+}
+.subPage .infoTable td~td {
+  border-left: 1px solid #333;
+}
+
+
+.subPage .T1player {
+  padding: 100px 0;
+  border-bottom: 1px solid #888;
+  background: #888;
+  line-height: 1.5;
+}
+.subPage .T1player>h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #f00;
+  
+  text-align: center;
+}
+.subPage .T1player>h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #f00;
+  margin: 15px auto;
+}
+.subPage .T1player>p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.subPage .T1player>p span {
+  font-weight: 500;
+  color: #f00;
+}
+.subPage .T1player .cotainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+.subPage .T1player .cotainer figure {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.subPage .T1player .cotainer .left {
+  width: 30%;
+}
+.subPage .T1player .cotainer .left h3 {
+  text-align: center;
+}
+.subPage .T1player .cotainer .left h3::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 130px;
+  background: #f00;
+  margin: 10px auto;
+}
+.subPage .T1player .cotainer .rigth {
+  width: 70%;
+}
+.subPage .T1player .cotainer .rigth p {
+  text-align: left;
+  line-height: 1.3;
+}
+.subPage .T1player .cotainer .rigth strong {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f00;
+}
+
+
+
+
+.subPage .infoMation {
+  padding: 100px 0;
+  border-bottom: 1px solid #333;
+}
+.subPage .infoMation>h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #333;
+  
+  text-align: center;
+}
+.subPage .infoMation>h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #f00;
+  margin: 15px auto;
+}
+.subPage .infoMation>p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.subPage .infoMation>p span {
+  font-weight: 500;
+  color: #f00;
+}
+.subPage .infoMation .cotainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+.subPage .infoMation .cotainer figure {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.root_daum_roughmap {
+  width: 100% !important;
+}
+.root_daum_roughmap .wrap_controllers {
+  height: 0;
+  padding: 0 !important;
+}
+.subPage .infoMation .cotainer .left {
+  width: 30%;
+}
+.subPage .infoMation .cotainer .left h3 {
+  text-align: center;
+}
+.subPage .infoMation .cotainer .left h3::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 130px;
+  background: #f00;
+  margin: 10px auto;
+}
+.subPage .infoMation .cotainer .rigth {
+  width: 70%;
+}
+.subPage .infoMation .cotainer .rigth p {
+  text-align: left;
+  line-height: 1.3;
+}
+.subPage .infoMation .cotainer .rigth strong {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f00;
+}
+
+
+/* footerWrap top, bottom : park  */
+
+.footerWrap {
+  background: #333;
+  color: #f2f2f2;
+  line-height: 60px;
+}
+
+.footerWrap .top {
+  border-bottom: 1px solid #666;
+}
+
+.footerWrap .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footerWrap .container>dl {
+  display: flex;
+  padding: 0 15px;
+  gap: 40px;
+}
+
+.footerWrap .container dd {
+  position: relative;
+}
+
+.footerWrap .container dd::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -20px;
+
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: #f2f2f2;
+
+  transform: translateY(-50%);
+}
+
+.footerWrap .container>div {
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+.footerWrap .container>* {
+  padding: 0 15px;
+}
+
+.footerWrap .link select {
+  background: #333;
+  width: 150px;
+  font-size: 14px;
+  border: 2px solid #f2f2f2;
+}
