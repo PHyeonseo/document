@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본으로 돌아가기 02</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      .Wrap {
+      }
+      header,
+      footer {
+        height: 100px;
+        background: #555;
+        color: #fff;
+        text-align: center;
+        line-height: 100px;
+      }
+      article {
+        min-height: 500px;
+        letter-spacing: -0.025em;
+      }
+      .subPage .infoMation {
+        padding: 100px 0;
+      }
+      .subPage .infoMation h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .subPage .infoMation h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #333;
+        margin: 15px auto;
+      }
+      .subPage .infoMation>p {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+      .subPage .infoMation .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .subPage .infoMation .container figure {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 15px;
+      }
+      .subPage .infoMation .container .left {
+        width: 35%;
+      }
+      .subPage .infoMation .container .left h3 {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+      .subPage .infoMation .container .left h3::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 150px;
+        background: #333;
+        margin: 30px auto;
+      }
+      .subPage .infoMation .container .rigth {
+        width: 65%;
+        padding: 0 15px;
+        font-weight: 300;
+        line-height: 1.4;
+      }
+      .subPage .infoMation .container .rigth strong {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Wrap">
+      <header>header</header>
+
+      <article class="subPage">
+        <section class="infoMation">
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+            perferendis obcaecati harum reiciendis. Atque, quis!
+          </p>
+          <div class="container">
+            <figure>
+              <img src="../images/mainvisual01.jpg" alt="" />
+            </figure>
+            <div class="left">
+              <h3>
+                Lorem ipsum dolor sit, amet consectetur<br>
+                adipisicing elit.
+              </h3>
+            </div>
+            <div class="rigth">
+              <p>
+                <strong>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                  Aliquam iure adipisci ipsa, cupiditate laboriosam libero quas?
+                </strong>
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Deleniti blanditiis tempore, nesciunt quidem atque eius soluta,<br><br>
+                ipsum sapiente et error ex iure, praesentium inventore
+                voluptatibus.<br><br><br>
+              </p>
+
+              <strong>Lorem, ipsum dolor.</strong>
+          </div>
+        </div>
+        </section>
+      </article>
+
+      <footer>&copy; Park.</footer>
+    </div>
+  </body>
+</html>

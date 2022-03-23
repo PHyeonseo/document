@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본으로 돌아가기 01</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      .Wrap {
+      }
+      header,
+      footer {
+        height: 100px;
+        background: #555;
+        color: #fff;
+        text-align: center;
+        line-height: 100px;
+      }
+      article {
+        min-height: 500px;
+      }
+      .subPage .greeting {
+        padding: 100px 0;
+        letter-spacing: -0.025em;
+      }
+      .subPage .greeting h2 {
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .subPage .greeting h2 span {
+        color: #0d6ef0;
+      }
+      .subPage .greeting h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #343a40;
+        margin: 15px auto;
+      }
+      .subPage .greeting > p {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 40px;
+      }
+      .subPage .greeting .container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .subPage .container > div {
+        width: 60%;
+        padding: 0 15px;
+      }
+      .subPage .container > figure {
+        width: 40%;
+      }
+      .subPage .ceoGreeting h3 {
+        font-size: 23px;
+        margin-bottom: 50px;
+        line-height: 1.5;
+      }
+      .subPage .ceoGreeting h3 span {
+        color: #0d6ef0;
+        font-weight: 300;
+      }
+      .subPage .ceoGreeting p {
+        line-height: 1;
+      }
+      .subPage .info {
+        padding: 100px 0;
+        border-top: 1px solid #ddd;
+      }
+      .subPage .info .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .subPage .info h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .subPage .info h3::before {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 15px;
+        background: #0d6ef0;
+        margin-right: 15px;
+        font-weight: 300;
+      }
+      .subPage .ceoGreeting strong {
+        font-weight: 700;
+      }
+
+      .subPage .info .infoTable {
+        width: 100%;
+        border-top: 2px solid #333;
+        border-bottom: 1px solid #333;
+        border-collapse: collapse;
+      }
+      .subPage .info .infoTable td,
+      .subPage .info .infoTable th {
+        padding: 15px 10px;
+        border-bottom: 1px solid #999;
+        text-align: left;
+      }
+      .subPage .info .infoTable th {
+        font-weight: 900;
+        background: #f2f2f2;
+      }
+      .subPage .info .infoTable th ~ th {
+        border-left: 1px solid #999;
+      }
+      .subPage .info .infoTable td ~ td {
+        border-left: 1px solid #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Wrap">
+      <header>header</header>
+      <article class="subPage">
+        <section class="greeting">
+          <h2><span>CEO's</span> greeting</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <div class="container">
+            <div class="ceoGreeting">
+              <h3>
+                Lorem ipsum dolor, sit amet consectetur
+                <span>adipisicing elit.</span>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+                Aperiam facere sequi accusamus quibusdam assumenda nemo
+                reiciendis possimus laboriosam odio,<br /><br />
+                minus impedit repudiandae libero, quasi eveniet harum deserunt
+                porro in sunt! Nobis <br />
+                consequatur minus voluptates, mollitia corporis pariatur nemo
+                veniam provident dicta quis <br /><br />
+                alias doloribus nihil aut dolor optio cum placeat repellat
+                facilis error eos totam numquam <br /><br /><br />
+                animi ipsam consequuntur? <strong>Numquam!</strong>
+              </p>
+            </div>
+            <figure>
+              <img src="../images/lesedilarona01.jpg" alt="" />
+            </figure>
+          </div>
+        </section>
+        <section class="info">
+          <div class="container">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <table class="infoTable">
+              <thead>
+                <tr>
+                  <th>1000</th>
+                  <th>2000</th>
+                  <th>3000</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>1000</td>
+                <td>2000</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>1000</td>
+                <td>2000</td>
+                <td>3000</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </article>
+      <footer>&copy; Park.</footer>
+    </div>
+  </body>
+</html>
