@@ -560,7 +560,7 @@
 
 /* movieBg : park 2022.03.21 최종수정 */
 .movieBg {
-  padding: 100px 0;
+  padding: 300px 0;
   background: #000;
   filter: grayscale(1);
 
@@ -779,7 +779,6 @@
   border: 2px solid #f2f2f2;
 }
 
-/* 팝업만들기 */
 .popup01 {
   position: absolute;
   inset: 50% auto auto 50%;
@@ -807,17 +806,9 @@
   font-size: 14px;
 }
 
-/* 스크롤 버튼만들기 */
 .toTop {
   position: fixed;
   inset: auto 50px 100px auto;
   background: transparent;
   border: none;
-  cursor: pointer;
-}
-
-.toTop i {
-  padding: 10px;
-  background: #333;
-  color: #fff;
 }
