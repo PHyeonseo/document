@@ -779,6 +779,7 @@
   border: 2px solid #f2f2f2;
 }
 
+/* 팝업만들기 */
 .popup01 {
   position: absolute;
   inset: 50% auto auto 50%;
@@ -794,7 +795,7 @@
 
 .popup01 button {
   position: absolute;
-  inset: auto 20px 20px auto;
+  inset: auto 20px 20px;
 
   width: 100px;
   height: 30px;
@@ -804,4 +805,19 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+/* 스크롤 버튼만들기 */
+.toTop {
+  position: fixed;
+  inset: auto 50px 100px auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toTop i {
+  padding: 10px;
+  background: #333;
+  color: #fff;
 }
