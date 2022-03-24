@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본으로 돌아가기 05</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      .subPage .hospitalContent {
+        padding: 100px 0;
+        letter-spacing: -0.025em;
+      }
+      .subPage .hospitalContent h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .subPage .hospitalContent h2::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #4dce89;
+        transform: translate(-10px,-5px);
+      }
+      .subPage .hospitalContent>p {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .subPage .hospitalContent .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .subPage .hospitalContent .container .top {
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .subPage .hospitalContent .container .left {
+        width: 50%;
+      } 
+      .subPage .hospitalContent .container .right {
+        width: 50%;
+      } 
+      .subPage .hospitalContent figure {
+        position: relative;
+        flex: 1;
+        height: 500px;
+        overflow: hidden;  
+      } 
+      .subPage .hospitalContent figure:nth-child(1) {
+        background: url(../images/mainvisual01.jpg) no-repeat 15% center/cover;
+      }
+      .subPage .hospitalContent figure:nth-child(2) {
+        background: url(../images/mainvisual02.jpg) no-repeat 60% center/cover;
+      }
+      .subPage .hospitalContent figure:nth-child(3) {
+        background: url(../images/mainvisual03.jpg) no-repeat 80% center/cover;
+      }
+      .subPage .hospitalContent figure:nth-child(4) {
+        background: url(../images/mainvisual01.jpg) no-repeat 35% center/cover;
+      }
+      .subPage .hospitalContent figure .inner {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        transition: 0.7s;
+      }
+      .subPage .hospitalContent figure.on .inner {
+        left: 0;
+      }
+      .subPage .hospitalContent figure .inner h3 {
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      .subPage .hospitalContent figure .inner p {
+        flex: 1;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4;
+      }
+      .subPage .hospitalContent a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        padding: 10px;
+        background: #0d6efd;
+        border: 1px solid #fff;
+        text-align: center;
+        color: #fff;
+      }
+      .subPage .hospitalContent .left {
+        position: relative;
+        padding-left: 30px ;
+      }
+      .subPage .hospitalContent .left::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        display: block;
+        width: 5px;
+        height: 55px;
+        background: #333;
+      }
+      .subPage .hospitalContent .left h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .subPage .hospitalContent .left p {
+        font-size: 15px;
+        font-weight: 300;
+      }
+      .dotList {
+        line-height: 1.6;
+      }
+      .dotList li::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #333;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Wrap">
+      <header>header</header>
+
+      <article class="subPage">
+        <section class="hospitalContent">
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis officiis rem neque!</p>
+          <div class="container">
+            <div class="top">
+              <figure>
+                <div class="inner">
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure>
+              <figure>
+                <div class="inner">
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure>
+              <figure>
+                <div class="inner">
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure>
+              <figure>
+                <div class="inner">
+                  <h3>Lorem, ipsum.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure> 
+            </div>
+            <div class="left">
+              <h3>Lorem ipsum dolor.</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis officiis rem neque!</p>
+            </div>
+            <ul class="right dotList">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <footer>&copy; Park.</footer>
+    </div>
+  </body>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function() {
+
+      $('.subPage .hospitalContent a').on('click', function() {
+        $(this).parent().toggleClass('on') 
+      })
+    })
+
+  </script>
+</html>
