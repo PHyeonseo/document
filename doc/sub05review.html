@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본으로 돌아가기 05 복습</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/sub05review.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div class="Wrap">
+      <header>header</header>
+
+      <article class="subPage">
+        <section class="t1Player">
+        <h2>T1 Player Introduction</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis officiis rem neque!</p>
+          <div class="container">
+            <div class="top">
+              <figure>
+                <div class="inner">
+                  <h3>ZEUS</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure>
+              <figure>
+                <div class="inner">
+                  <h3>FAKER</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure>
+              <figure>
+                <div class="inner">
+                  <h3>ONER</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Quo, totam.</p>
+                </div>
+                <a href="#!">MORE</a>
+              </figure>
+            </div>
+            <div class="left">
+              <h3>Lorem ipsum dolor.</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis officiis rem neque!</p>
+            </div>
+            <ul class="right">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <footer>&copy; Park.</footer>
+    </div>
+  </body>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function() {
+
+      $('.subPage .t1Player a').on('click', function() {
+        $(this).parent().toggleClass('on') 
+      })
+    })
+
+  </script>
+</html>
