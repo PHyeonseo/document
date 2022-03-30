@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>popup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* width: 1000px;
+      position: relative;
+      margin: 0 auto; */
+      overflow: hidden;
+    }
+
+    #popup {
+      display: none;
+    }
+    #popup:checked~.popupBox {
+      display: block;
+    }
+    #popup~.popupBox {
+      display: none;
+    }
+
+    .popupBox {
+      position: absolute;
+      top: 300px;
+      left: 300px;
+      width: 300px;
+      height: 350px;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+
+    #wingBanner {
+      display: none;
+    }
+    #wingBanner:checked~.wingBox {
+      right: 0;
+    }
+    #wingBanner~.wingBox {
+      right: -200px;
+    }
+    #wingBanner:checked~.wingBox .closeBtn {
+      display: block;
+    }
+    #wingBanner:checked~.wingBox .openBtn {
+      display: none;
+    }
+    #wingBanner~.wingBox .openBtn {
+      display: block;
+    }
+    #wingBanner~.wingBox .closeBtn {
+      display: none;
+    }
+    .wingBox {
+      position: absolute;
+      top: 200px;
+      right: -200px;
+      transition: all 0.3s;
+      /* 변화하는 소스코드에 트랜지션 작성 */
+    }
+    .wingBox label {
+      float: left;
+    }
+    .wingBox .wing {
+      float: left;
+      width: 200px;
+      height: 500px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      background: #ccc;
+      /* transition: width, 0.3s; */
+    }
+  </style>
+</head>
+<body>
+  
+  <input type="checkbox" id="popup" checked>
+
+  <div class="popupBox">
+    <div class="popupImg">
+      <img src="img/popup_img.jpg" alt="팝업이미지(로딩중)">
+    </div>
+    <label for="popup" class="popupLabel">닫기</label>
+  </div>  
+
+
+  <input type="checkbox" id="wingBanner" checked>
+
+  <aside class="wingBox">
+    <label for="wingBanner" class="closeBtn">닫기</label>
+    <label for="wingBanner" class="openBtn">열기</label>
+    <div class="wing">wing_Banner</div>
+  </aside>
+
+
+</body>
+</html>

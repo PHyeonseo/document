@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout복습</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    section {
+      width: 1000px;
+      height: 200px;
+      background: #ccc;
+      margin: 0 auto;
+    }
+
+
+    .box01 {
+      margin-bottom: 20px;
+    }
+    .box01 div {
+      width: 490px;
+      height: 200px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      float: left;
+    }
+    .box01 div:first-child {
+      margin-right: 20px;
+    }
+
+
+
+    .box02 {
+      margin-bottom: 20px;
+    }
+    .box02 div {
+      width: 326.6px;
+      height: 200px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      float: left;
+    }
+    .box02 div:nth-child(2) {
+      margin: 0 10px;
+    }
+
+
+
+  .box03 {
+    margin-bottom: 20px;
+  }
+  .box03 .box03_1 {
+    border: 1px solid black;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 17px;
+  }
+  .box03 .box03_1 div {
+    width: 490px;
+    height: 95px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  .box03 .box03_1 div:first-child {
+    margin-bottom: 10px;
+  }
+  .box03 .box03_2 {
+    width: 490px;
+    height: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    float: left;
+  }
+
+
+  .insta {
+    width: 1040px;
+    height: 410px;
+    margin: 0 auto;
+    background: #ccc;
+  }
+  .insta li {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border: 1px solid black; 
+    box-sizing: border-box;
+    float: left;
+  }
+  .insta li:nth-child(1),
+  .insta li:nth-child(2),
+  .insta li:nth-child(3),
+  .insta li:nth-child(4), 
+  .insta li:nth-child(5) {
+    margin-bottom: 10px;
+  }
+  .insta li:nth-child(5),
+  .insta li:nth-child(10) {
+    margin: 0;
+  }
+  </style>
+</head>
+<body>
+  
+  <section class="box01">
+    <div class="box01_1">box01_1</div>
+    <div class="box01_2">box01_2</div>
+  </section>
+
+  <section class="box02">
+    <div class="box02_1">box02_1</div>
+    <div class="box02_2">box02_2</div>
+    <div class="box02_3">box02_3</div>
+  </section>
+
+  <section class="box03">
+    <div class="box03_1">
+      <div class="box03_11">box03_11</div>
+      <div class="box03_12">box03_12</div>
+    </div>
+    <div class="box03_2">box03_2</div>
+  </section>
+
+  <ul class="insta">
+    <li>ins01</li>
+    <li>ins02</li>
+    <li>ins03</li>
+    <li>ins04</li>
+    <li>ins05</li>
+    <li>ins06</li>
+    <li>ins07</li>
+    <li>ins08</li>
+    <li>ins09</li>
+    <li>ins10</li>
+  </ul>
+</body>
+</html>

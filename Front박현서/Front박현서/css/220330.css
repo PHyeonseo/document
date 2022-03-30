@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {margin: 0;padding: 0;}
+ul,li {list-style: none;}
+a {text-decoration: none; color: black;}
+
+header h2 {font-family: 'Lobster', cursive; font-size: 40px;}
+header h3 {font-family: 'Lobster', cursive; font-size: 30px;}
+
+
+#Wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#headerWrap {
+  background: #ccc;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+header .gnb {
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  float: right;
+}
+header .gnb li {
+  padding: 8px;
+  border-left: 1px solid black;
+  float: left;
+  transition: all 0.3s;
+}
+header .gnb li:nth-child(1) {
+  border: none;
+}
+header .gnb li:hover {
+  background: black;
+}
+header .gnb li:hover a {
+  color: #fff;
+}
+
+
+header .logo {
+  padding-top: 30px;
+  margin: 10px 0;
+}
+
+
+
+header .lnb {
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  float: right; 
+  transition: all ;
+}
+header .lnb li {
+  padding: 8px;
+  border-left: 1px solid black;
+  float: left;
+}
+header .lnb li:nth-child(1) {
+  border: none;
+}
+header .lnb li:hover {
+  background: black;
+}
+header .lnb li:hover a {
+  color: #fff;
+}
+
+
+
+.content .left div {
+  width: 795px;
+  height: 300px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0 10px ;
+  float: left;
+}
+.content aside {
+  width: 195px;
+  height: 900px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: right;
+}
