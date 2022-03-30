@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu_Tab</title>
+  <style>
+    * {margin: 0;padding: 0;}
+
+    #tab01,#tab02,#tab03 {display: none;}
+
+    #tab01:checked ~ .sheet .sheet01 {display: block;}
+    /* #tab01:checked ~ .sheet .sheet02 {display: none;}
+    #tab01:checked ~ .sheet .sheet03 {display: none;} */
+
+    /* #tab02:checked ~ .sheet .sheet01 {display: none;} */
+    #tab02:checked ~ .sheet .sheet02 {display: block;}
+    /* #tab02:checked ~ .sheet .sheet03 {display: none;} */
+
+    /* #tab03:checked ~ .sheet .sheet01 {display: none;}
+    #tab03:checked ~ .sheet .sheet02 {display: none;} */
+    #tab03:checked ~ .sheet .sheet03 {display: block;}
+
+
+    #tab01:checked ~ .label .lab01 {background-color: yellow;color: black;}
+    #tab02:checked ~ .label .lab02 {background-color: yellow;color: black;}
+    #tab03:checked ~ .label .lab03 {background-color: yellow;color: black;}
+
+    .label {overflow: hidden;}
+    .label label {
+      display: block;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: black;
+      color: #fff;
+      float: left;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .sheet div {
+      width: 500px;
+      height: 300px;
+      background: yellow;
+      font-size: 50px;
+      text-align: center;
+      line-height: 300px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+    <input type="radio" id="tab01" name="radio" checked>
+    <input type="radio" id="tab02" name="radio">
+    <input type="radio" id="tab03" name="radio">
+
+    <div class="label">
+      <label for="tab01" class="lab01">공지사항</label>
+      <label for="tab02" class="lab02">Q&A</label>
+      <label for="tab03" class="lab03">오시는길</label>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet01">sheet01</div>
+      <div class="sheet02">sheet02</div>
+      <div class="sheet03">sheet03</div>
+    </div>
+  </section><!--news-->
+
+</body>
+</html>

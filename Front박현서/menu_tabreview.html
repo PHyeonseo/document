@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu_Tab 복습</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+    * {margin: 0;padding: 0;}
+    body {font-family: 'Nanum Pen Script', cursive;}
+
+    section {}
+    .travel {width: 600px; margin: 500px auto;border: 2px solid black;border-radius: 10px;}
+    .travel h2 {
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 10px;}
+
+    #trav01,#trav02,#trav03,#trav04,#trav05 {display: none;}
+
+    #trav01:checked ~ .sheet .NewYourk {display: block;}
+    #trav02:checked ~ .sheet .Osaka {display: block;}
+    #trav03:checked ~ .sheet .Australia {display: block;}
+    #trav04:checked ~ .sheet .Germany {display: block;}
+    #trav05:checked ~ .sheet .Dubai {display: block;}
+
+    #trav01:checked ~ .label .lab01 {background: #ccc; color: black;}
+    #trav02:checked ~ .label .lab02 {background: #ccc; color: black;}
+    #trav03:checked ~ .label .lab03 {background: #ccc; color: black;}
+    #trav04:checked ~ .label .lab04 {background: #ccc; color: black;}
+    #trav05:checked ~ .label .lab05 {background: #ccc; color: black;}
+
+
+    .label {
+      float: left;
+    }
+
+    .label label {
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 50px;
+      text-align: center;
+      background: black;
+      border-radius: 10px 0 0 10px;
+      color: #fff;
+    }
+
+    .sheet {
+      width: 600px;
+      height: 250px;
+    }
+    .sheet div {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <section>
+    <div class="travel">
+      <h2>내가 가고싶은 여행지</h2>
+
+      <input type="radio" id="trav01" name="travel" checked>
+      <input type="radio" id="trav02" name="travel">
+      <input type="radio" id="trav03" name="travel">
+      <input type="radio" id="trav04" name="travel">
+      <input type="radio" id="trav05" name="travel">
+
+
+      <div class="label">
+        <label for="trav01" class="lab01">뉴욕</label>
+        <label for="trav02" class="lab02">오사카</label>
+        <label for="trav03" class="lab03">호주</label>
+        <label for="trav04" class="lab04">부산</label>
+        <label for="trav05" class="lab05">두바이</label>
+      </div>
+
+      <div class="sheet">
+        <div class="NewYourk"><img src="./img/NewYork_img.jpg" alt="NewYork"></div>
+        <div class="Osaka"><img src="./img/Osaka_img.jpg" alt="Osaka"></div>
+        <div class="Australia"><img src="./img/Australia_img.jpg" alt="Australia"></div>
+        <div class="Germany"><img src="./img/Busan_img.jpg" alt="Basan"></div>
+        <div class="Dubai"><img src="./img/Dubai_img.jpg" alt="Dubai"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
