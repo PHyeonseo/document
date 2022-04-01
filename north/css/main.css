@@ -1,0 +1,606 @@
+* {margin: 0; padding: 0;}
+img {display: block; width: 100%; height: auto;}
+a {text-decoration: none; color: black;}
+ul,li {list-style: none;}
+
+/*------------------ header ------------------- */
+#header {
+  width: 100%;
+  height: 150px;
+}
+
+.gnbBox {
+  width: 1060px;
+  height: 20px;
+  margin: 0 auto;
+}
+.gnbBox .gnb {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+.gnbBox .gnb ul {
+  font-size: 0;
+  float: right;
+}
+.gnbBox .gnb li {
+  display: inline-block;
+  font-size: 13px;
+  padding: 5px 8px;
+  border-right: 1px solid black;
+  line-height: 8px;
+}
+
+
+
+
+.menuBox {
+  width: 100%;
+  height: 90px;
+  background-color: #f2f2f2;
+}
+.menuBox .menuBar {
+  width: 1060px;
+  margin: 0 auto;
+  position: relative;
+}
+.menuBox .menuBar .logo {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.menuBox .menuBar ul {
+  float: right;
+  line-height: 90px;
+}
+.menuBox .menuBar li {
+  float: left;
+  padding: 0 10px;
+}
+.menuBox .menuBar input {
+  width: 200px;
+  height: 28px;
+}
+
+
+
+
+.lnbBox {
+  width: 100%;
+  height: 40px;
+  background: #141414;
+}
+.lnbBox .lnb {
+  width: 1060px;
+  margin: 0 auto;
+  overflow: hidden;
+} 
+.lnbBox .lnb ul {
+  line-height: 40px;
+  float: right;
+}
+.lnbBox .lnb li {
+  padding: 0 40px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  float: left;
+}
+
+/*------------------ wrap ------------------- */
+.wrap {
+  width: 100%;
+  height: 3000px;
+  background: url(../img/bg_img.jpg) repeat-x;
+  /* background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+
+}
+
+
+/*------------------ visual_main ------------------- */
+#tab01,#tab02,#tab03,#tab04,#tab05 {display: none;}
+
+#tab01:checked ~ .sheet .sheet01 {display: block;}
+#tab02:checked ~ .sheet .sheet02 {display: block;}
+#tab03:checked ~ .sheet .sheet03 {display: block;}
+#tab04:checked ~ .sheet .sheet04 {display: block;}
+#tab05:checked ~ .sheet .sheet05 {display: block;}
+
+.visualMain {
+  width: 1060px;
+  height: 530px;
+  margin: 0 auto;
+}
+
+.visualMain .sheet div {
+  width: 1060px;
+  height: 480px;
+  display: none;
+}
+
+.visualMain .labelMain {
+  width: 1060px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.visualMain .labelMain label{
+  display: block;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+
+#tab01:checked ~ .labelMain .labMain01 {
+  background: red;
+  color: #fff;
+}
+#tab02:checked ~ .labelMain .labMain02 {
+  background: red;
+  color: #fff;
+}
+#tab03:checked ~ .labelMain .labMain03 {
+  background: red;
+  color: #fff;
+}
+#tab04:checked ~ .labelMain .labMain04 {
+  background: red;
+  color: #fff;
+}
+#tab05:checked ~ .labelMain .labMain05 {
+  background: red;
+  color: #fff;
+}
+
+
+/*------------------ content ------------------- */
+.content {
+  width: 1250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+/*------------------ issueItem ------------------- */
+.issueItem {
+  width: 100%;
+  overflow: hidden;
+}
+.issueItem h2 {
+  width: 1060px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+
+.issueItem .issueLeft {
+  width: 95px;
+  margin-top: 520px;
+  float: left;
+}
+
+
+.issueItem .issueProduct {
+  width: 1060px;
+  height: 1160px;
+  float: left;
+}
+
+
+.issueProduct .productTop {
+  width: 1060px;
+  height: 580px;
+  float: left;
+}
+.issueProduct .productTop .eventMain01 {
+  width: 530px;
+  height: 580px;
+  float: left;
+}
+.issueProduct .productTop .eventProduct01 {
+  width: 530px;
+  height: 580px;
+  float: left;
+}
+.issueProduct .productTop .eventProduct01 .event01 {
+  width: 265px;
+  height: 290px;
+  float: left;
+}
+.issueProduct .productTop .eventProduct01 .event02 {
+  width: 265px;
+  height: 290px;
+  float: left;
+}
+.issueProduct .productTop .eventProduct01 .event03 {
+  width: 265px;
+  height: 290px;
+  float: left;
+}
+.issueProduct .productTop .eventProduct01 .event04 {
+  width: 265px;
+  height: 290px;
+  float: left;
+}
+
+
+.issueProduct .productBottom {
+  width: 1060px;
+  height: 580px;
+  float: left;
+}
+.issueProduct .productBottom .eventMain02 {
+  width: 530px;
+  height: 580px;
+  float: left;
+}
+.issueProduct .productBottom .eventMain02 .event05 {
+  width: 264px;
+  height: 290px;
+  float: left;
+}
+.issueProduct .productBottom .eventMain02 .event06 {
+  width: 266px;
+  height: 290px;
+  float: left;
+}
+.issueProduct .productBottom .eventMain02 .event07 {
+  width: 264px;
+  height: 290px;
+  float: left;
+}
+.issueProduct .productBottom .eventMain02 .event08 {
+  width: 266px;
+  height: 290px;
+  float: left;
+}
+
+.issueProduct .productBottom .eventProduct02 {
+  width: 530px;
+  height: 580px;
+  float: left;
+}
+
+
+.issueItem .issueRight {
+  width: 95px;
+  margin-top: 520px;
+  float: left;
+}
+
+
+/*------------------ activity ------------------- */
+.activity {
+  width: 100%;
+  overflow: hidden;
+}
+.activity h2 {
+  width: 1060px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.activity .activityLeft {
+  width: 95px;
+  height: 135px;
+  margin-top: 105px;
+  float: left;
+}
+.activity .rollingVisual {
+  width: 1060px;
+  height: 383px;
+  float: left;
+}
+.activity .activityRight {
+  width: 95px;
+  height: 135px;
+  margin-top: 105px;
+  float: left;
+}
+
+
+/*------------------ newArrival ------------------- */
+
+#check01 {display: none;}
+
+#check01:checked ~ .labelArrival .plus {display: none;}
+#check01:checked ~ .labelArrival .minus {display: block;}
+#check01 ~ .labelArrival .plus {display: block;}
+#check01 ~ .labelArrival .minus {display: none;}
+
+#check01:checked ~ .plusProduct {height: 277px;}
+
+
+.newArrival {
+  width: 1060px;
+  margin: 0 auto 50px auto;
+  overflow: hidden;
+}
+.newArrival h2 {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+.newArrival .labelArrival {
+  float: right;
+}
+.newArrival .labelArrival label {
+  font-size: 30px;
+  color: #ccc;
+}
+
+.newArrival .newProduct {
+  width: 1100px;
+  height: 580x;
+  overflow: hidden;
+}
+.newArrival .newProduct .product01 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product02 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product03 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product04 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product05 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product06 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product07 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+.newArrival .newProduct .product08 {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+
+
+.newArrival .plusProduct {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.6s 0.2s;
+}
+.newArrival .plusProduct .product09 {
+  width: 265px;
+  height: 277px;
+  float: left;
+}
+.newArrival .plusProduct .product10 {
+  width: 265px;
+  height: 277px;
+  float: left;
+}
+.newArrival .plusProduct .product11 {
+  width: 265px;
+  height: 277px;
+  float: left;
+}
+.newArrival .plusProduct .product12 {
+  width: 265px;
+  height: 277px;
+  float: left;
+}
+
+/*------------------ footer ------------------- */
+
+footer {
+  width: 100%;
+  background: #ccc;
+  overflow: hidden;
+  background: #141414;
+}
+
+footer .footerTop {
+  width: 1060px;
+  height: 200px;
+  margin: 30px auto 0 auto;
+  overflow: hidden;
+}
+footer .footerTop .left {
+  width: 800px;
+  float: left;
+}
+footer .footerTop .left ul {
+  float: left;
+  width: 25%;
+}
+footer .footerTop .left li {
+  padding: 6px;
+  color: #ccc; 
+  font-size: 12px;
+}
+footer .footerTop .left li:first-child {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+footer .footerTop .right {
+  width: 260px;
+  float: left;
+}
+footer .footerTop .right .top h3 {
+  color: #fff;
+  font-size: 17px;
+}
+footer .footerTop .right .top p {
+  font-size: 13px;
+  color: #ccc;
+}
+footer .footerTop .right .top p:nth-of-type(1) {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+footer .footerTop .bottom {
+  margin-top: 20px;
+}
+footer .footerTop .bottom  h3 {
+  color: #fff;
+  font-size: 17px;
+}
+footer .footerTop .bottom p {
+  font-size: 13px;
+  color: #ccc;
+}
+footer .footerTop .bottom p a {
+  color: #fff;
+  font-weight: 800;
+}
+
+
+
+.footerMiddle {
+  width: 1060px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.footerMiddle .storeLocation {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.footerMiddle .storeLocation h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footerMiddle .storeLocation a {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #f00;
+  border-radius: 5px;
+}
+
+
+
+
+.footerMiddle .sns {
+  width: 50%;
+  float: left;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footerMiddle .sns h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footerMiddle .sns .snsBox {
+  text-align: center;
+}
+.footerMiddle .sns .snsBox img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.footerMiddle .sns .snsBox img:last-child {
+  margin: 0;
+}
+
+
+
+
+.footerBottom {
+  width: 1060px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footerBottom .left {
+  width: 50%;
+  float: left;
+}
+.footerBottom .left p {
+  font-size: 11px;
+  color: #ccc;
+}
+.footerBottom .left a {
+  color: #fff;
+  font-size: 12px;
+}
+
+
+.footerBottom .right {
+  width: 50%;
+  float: left;
+}
+.footerBottom .right p {
+  font-size: 11px;
+  color: #ccc;
+}
+.footerBottom .right a {
+  color: #fff;
+  font-size: 12px;
+}
+
+
+.bottom {
+  width: 1060px;
+  margin: 40px auto; 
+  overflow: hidden;
+}
+.bottom .logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 15px;
+}
+.bottom .right {
+  float: left;
+}
+.bottom .right div {
+  color: #ccc;
+  font-size: 14px;
+}
+.bottom .right .service a:first-child {
+  color: #fff;
+}
+.bottom .right .service a:last-child {
+  color: #fff;
+}
+/*------------------ btnTop ------------------- */
+.btnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  background: red;
+  color: #fff;
+} 
